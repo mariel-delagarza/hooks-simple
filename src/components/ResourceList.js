@@ -12,7 +12,7 @@ const ResourceList = ({ resource }) => {
 
   useEffect(() => {
     fetchResource(resource);
-  }, [resource])
+  }, [resource]);
 
   return <div>{resources.length}</div>;
 }
