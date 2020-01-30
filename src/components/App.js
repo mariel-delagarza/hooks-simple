@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 class App extends React.Component {
   state = { resource: 'posts'};
@@ -7,8 +7,8 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <button>Posts</button>
-          <button>Todos</button>
+          <button onClick={() => this.setState({resource: 'posts'})}>Posts</button>
+          <button onClick={() => this.setState({resource: 'todos'})}>Todos</button>
         </div>
         {this.state.resource}
       </div>
