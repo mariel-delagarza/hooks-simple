@@ -6,10 +6,10 @@ const App = () => {
   return (
     <div>
       <div>
-        <button onClick={() => this.setState({resource: 'posts'})}>Posts</button>
-        <button onClick={() => this.setState({resource: 'todos'})}>Todos</button>
+        <button onClick={() => setResource('posts')}>Posts</button>
+        <button onClick={() => setResource('todos')}>Todos</button>
       </div>
-      {this.state.resource}
+      {resource}
     </div>
   );
 }
